@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/967089a46f.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <div id="container">
+
+        <input id="entrada" type="text" placeholder="Digite um item...">
+        <button class="head" onclick="addItemAlista()">Adicionar</button>
+        <button class="head" onclick="organizarLista()">Ordenar</button>
+
+        <div id="lista">
+
+            <div id="lista-vazia">
+                <h1 style="margin: 0;">Lista vazia</h1>
+            </div>
+
+            <div id="lista-conteudos">
+
+            </div>
+
+            <script>
+                
+                if (lista.length === 0){
+
+                    document.getElementById('lista-vazia').style.display = 'flex';
+                    document.getElementById('lista-conteudos').style.display = 'none';
+
+                }
+
+            </script>
+
+        </div>
+
+        <button id="apagarLista" onclick="apagarLista()">
+            <i class="fas fa-trash-alt"></i>
+        </button>
+
+    </div>
+    
+</body>
+</html>
