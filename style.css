@@ -116,4 +116,34 @@ button.head:hover {
     
 }
 
+@media only screen and (max-width: 600px) {
+    
+    body {
+        
+        background-color: rgb(45, 136, 240);
+        background-image: none;
+    
+    }
+
+    #container {
+    
+        width: 98%;
+    
+    }
+
+    input[type=text] {
+
+        width: 100%;
+        margin-bottom: 10px;
+    
+    }
+
+    button.head {
+
+        width: 49%;
+    
+    }
+
+}
+
 
