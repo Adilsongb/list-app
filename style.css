@@ -1,149 +1,86 @@
 body {
-
-    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+  background-color: rgb(224, 224, 224);
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
-#container {
-
-    background-color: #ffffff;
-    width: 600px;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    margin-top: 80px;
-    border-radius: 5px;
-    border-top: 5px solid #7dc5ff;
-    min-height: 500px;
-    max-height: 800px;
-
+main {
+  background-color: white;
+  border-radius: 5px;
+  margin: 40px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 600px;
+  box-shadow: 0 0 15px rgba(100, 100, 100, 0.2);
 }
 
-input[type=text] {
-
-    width: 66%;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    border: none;
-    background-color: #ebebeb;
-    border-radius: 5px;
-    color: #696969;
-    font-size: 15px;
-
+h1 {
+  margin: 0;
 }
 
-input:focus {
-    outline: none;
+#funcionamento {
+  font-style: italic;
 }
 
-button.head {
-
-    background-color: #105cff;
-    border: none;
-    color: #ffffff;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 15px;
-    transition: 0.2s;
-
+#texto-tarefa {
+  padding: 10px;
+  border: none;
+  background-color: rgb(230, 230, 230);
+  border-radius: 5px;
+  width: 47%;
+  font-size: 16px;
 }
 
-button.head:hover {
-
-    background-color: #22009e;
-
+#listaVazia {
+  text-align: center;
+  color: rgb(195, 195, 195);
+  margin: 40px 0;
 }
 
-#lista {
-
-   background-color: #ebebeb;
-   min-height: 400px;
-   border-radius: 5px;
-   margin-top: 20px;
-   
+#lista-tarefas {
+  margin: 20px 0;
+  background-color: rgb(243, 243, 243);
+  padding: 20px 20px 20px 40px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: none;
 }
 
-#lista #lista-vazia {
-
-    color: #c3c3c3;
-    display: none; /* desativar se tiver algum item na lista */
-    justify-content: center;
-    align-items: center;
-    min-height: 400px;
-
+.completed {
+  text-decoration: line-through;
 }
 
-#lista-conteudos {
-
-    min-height: 400px;
-    padding: 20px;
-    box-sizing: border-box;
-
+li {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
 }
 
-.item {
-
-    font-size: 20px;
-    margin-bottom: 10px;
-    list-style: rgba(149, 149, 149, 0.8);
-    color: rgb(31, 74, 190);
-
+.botao {
+  border: none;
+  border-radius: 5px;
+  padding: 0 12px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.2s background-color;
 }
 
-#apagarLista {
-    
-    display: none;
-    background-color: #ebebeb;
-    color: #c3c3c3;
-    width: 100%;
-    border: none;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 20px;
-    cursor: pointer;
-    transition: 0.1s;
-
+#criar-tarefa {
+  background-color: rgb(17, 230, 116);
 }
 
-#apagarLista:hover {
-
-    background-color: #c3c3c3;
-    color: #ebebeb;
-    
+#apaga-tudo {
+  background-color: rgb(236, 108, 108);
 }
 
-@media only screen and (max-width: 600px) {
-    
-    body {
-        
-        background-color: rgb(45, 136, 240);
-        background-image: none;
-    
-    }
-
-    #container {
-    
-        width: 98%;
-    
-    }
-
-    input[type=text] {
-
-        width: 100%;
-        margin-bottom: 10px;
-    
-    }
-
-    button.head {
-
-        width: 49%;
-    
-    }
-
+#salvar-tarefas {
+  background-color: rgb(153, 208, 253);
 }
 
+#mover-cima:hover, #mover-baixo:hover {
+  background-color: rgb(253, 253, 125);
+}
 
+#remover-selecionado:hover, #remover-finalizados:hover {
+  background-color: rgb(236, 108, 108);
+}
