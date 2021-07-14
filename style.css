@@ -1,37 +1,86 @@
 body {
-  background-color: rgb(216, 216, 216);
-  font-family: 'Trebuchet MS', sans-serif;
+  background-color: rgb(224, 224, 224);
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
-#container {
-  background-color: rgb(255, 255, 255);
-  width: 600px;
-  padding: 20px 20px;
+main {
+  background-color: white;
+  border-radius: 5px;
+  margin: 40px auto;
+  padding: 20px;
   box-sizing: border-box;
-  margin: 0 auto;
-  margin-top: 80px;
-  border-radius: 5px;
-  border-top: 5px solid rgb(125, 149, 255);
-  min-height: 500px;
-  max-height: 800px;
+  width: 600px;
+  box-shadow: 0 0 15px rgba(100, 100, 100, 0.2);
 }
 
-#opcoes {
-  float: right;
+h1 {
+  margin: 0;
 }
 
-button.head {
-  background-color: rgb(243, 243, 243);
+#funcionamento {
+  font-style: italic;
+}
+
+#texto-tarefa {
+  padding: 10px;
   border: none;
-  color: rgb(182, 182, 182);
-  padding: 10px 15px;
+  background-color: rgb(230, 230, 230);
   border-radius: 5px;
-  cursor: pointer;
-  font-size: 15px;
-  transition: 0.2s;
+  width: 47%;
+  font-size: 16px;
 }
 
-button.head:hover {
-  background-color: rgb(125, 149, 255);
-  color: white;
+#listaVazia {
+  text-align: center;
+  color: rgb(195, 195, 195);
+  margin: 40px 0;
+}
+
+#lista-tarefas {
+  margin: 20px 0;
+  background-color: rgb(243, 243, 243);
+  padding: 20px 20px 20px 40px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: none;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+li {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.botao {
+  border: none;
+  border-radius: 5px;
+  padding: 0 12px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.2s background-color;
+}
+
+#criar-tarefa {
+  background-color: rgb(17, 230, 116);
+}
+
+#apaga-tudo {
+  background-color: rgb(236, 108, 108);
+}
+
+#salvar-tarefas {
+  background-color: rgb(153, 208, 253);
+}
+
+#mover-cima:hover, #mover-baixo:hover {
+  background-color: rgb(253, 253, 125);
+}
+
+#remover-selecionado:hover, #remover-finalizados:hover {
+  background-color: rgb(236, 108, 108);
 }
